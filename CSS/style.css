@@ -1,0 +1,23 @@
+.bg-header {
+	background-color: #666699; /* background du header */
+}
+
+.text-black {
+	color:black;
+}
+
+.border-rad {
+	border-radius: .25rem; /* Arrondir les bordures */
+}
+
+.bg-violet {
+	background-color: #666699;
+}
+
+.bg-violet-light {
+	background-color: #efeff5;
+}
+
+.shadow {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) /* crée une ombre */
+}

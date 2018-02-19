@@ -1,0 +1,33 @@
+body {
+	font-family: Arial Narrow, sans-serif; /*Changer la police du body */
+	text-align: center;
+
+}
+table {
+	width: 50%;
+	margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+}
+thead th ,tfoot th{
+	background: #3b72cc; /* couleur du back l'entete et du footer */
+}
+
+td, th {
+  	border: 3px solid; /* créer la bordure du tableau */
+ 	padding: 10px; /* change la taille des case du tableau */
+}
+
+td {
+	text-align: center; /* centre le texte dans les cases du tableau */
+	border-collapse: collapse;
+}
+tr:nth-child(even){background-color: #839cc4} /* color que les lignes paires du tableau (even) */
+tr:nth-child(odd){background-color: #4c6999} /* color que les lignes impaires du tableau (odd) */
+tr:nth-child(even) td:hover{background-color: #b4c9ed} /* met en surbrillance la case sectionné pour les colonnes paire étant donné que */
+tr:nth-child(odd) td:hover{background-color: #5a8ce2} /* les colonnes paires et impaires ont une couleur différente leur surbrillance le sera aussi */ 
+
+
+
+
+
