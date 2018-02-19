@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tableau</title>
+		<link rel="stylesheet" type="text/css" href="..\CSS\tableau.css">
+				<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/logo.png" />
+	</head>
+
+	<body>
+
+		<h1>Statistiques des contrôles radars sur autoroute A7</h1>
+		<table class="center">
+			<thead> <!-- en tête du tableau -->
+				<tr>
+					<th>Vitesse mesurée en km/h</th>
+					<th>Nombre de Véhicules</th>
+					<th>Sanction opérées</th>
+				</tr>
+			</thead>
+
+			<tfoot> <!-- Pied du tableau -->
+				<tr>
+					<th>Vitesse mesurée en km/h</th>
+					<th>Nombre de Véhicules</th>
+					<th>Sanction opérées</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<!-- SANS SANCTION -->
+					<tr class="sans">
+						<td>de 90 à 110 km/h</td>
+						<td>325</td>
+						<td class="selectable">NON</td>
+					</tr>
+
+					<tr class="sans">
+						<td>de 110 à 130 km/h</td>
+						<td>564</td>
+						<td class="selectable">NON</td>
+					</tr>
+
+
+					<tr class="sans">
+						<td>de 130 à 140 km/h</td>
+						<td>323</td>
+						<td class="selectable">NON</td>
+					</tr>
+				
+				<!-- AVEC SANCTION -->
+					<tr class="avec">
+						<td>de 140 à 160 km/h</td>
+						<td>223</td>
+						<td class="selectable">Amende</td>
+					</tr>
+
+					<tr class="avec">
+						<td>de 160 à 190 km/h</td>
+						<td>87</td>
+						<td class="selectable">Retrait</td>
+					</tr>	
+			</tbody>		
+		</table>
+
+	</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+
+		<!-- TITLE -->
+		<title>Mise en page</title>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/logo.png" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\bootstrap.min.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="text-center bg-header">
+				<a href="menu.html">
+					<img src="..\IMAGE\icon.png" alt="icône_de_la_page" height="120">
+				</a>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	      	<div class="collapse navbar-collapse justify-content-md-center">
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item active ">
+	            		<a class="nav-link" href="menu.html">Acceuil<span class="sr-only">(current)</span></a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="mise_en_page.html">Mise en forme</a>
+	          		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="listes.html">Les listes</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="multimedia.html">Multimédia</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="unite_contenu.html">Gestion d'images</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="balises.html">Les balises</a>
+              		</li>              		              		
+	        	</ul>
+	      	</div>
+	    </nav>
+
+		<div class="container mt-2">
+			<div class="jumbotron p-3 p-md-5 text-white rounded bg-violet shadow">
+        		<div class="col-md-6 px-0">
+          			<h1 class="display-4 font-italic">Les listes ordonnées, non ordonnées..</h1>
+          				<p class="lead my-3">D'après le temps que j'ai pris pour réalisé cette page et se que j'en pense personnellement, je trouve qu'il s'agit de la page la mieux faite du site. La page parle des différents types de listes disponible en HTML et comment les utiliser.</p>
+          				<p class="lead mb-0"><a href="listes.html" class="text-white font-weight-bold">En savoir plus...</a></p>
+        		</div>
+      		</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="jumbotron bg-violet-light rounded shadow">
+						<h3 class="display-4 font-italic">La mise en page</h3>
+						<h4 id="para">Les paragraphe (Balise P) et mise à la ligne (balise BR)</h4>
+						<hr>
+						<p>
+							<em>Une maman c'est un cadeau du ciel</em> 
+							<!-- Explication de la balises EM -->
+							=> Utilisation de la balise EM pour mettre en italic<br/>
+							<!-- Utilisation des balises STRONG et MARK qui permettent de mettre en gras et surligner -->
+							<strong>
+								<mark>Ses baisers sont doux comme le miel</mark> 
+							</strong>
+							<!-- Explication des balises STRONG et MARK -->
+							=> Utilisation de la balise STRONG pour mettre en gras et MARK pour surligner<br/>
+
+							Une maman nous comprend à demi mot<br/> 
+							Pour elle on est toujours un cadeau<br/>  
+							Un cadeau que la vie lui à fait<br/>  
+							Elle nous pardonne toutes nos erreurs<br/>  
+							Toute sa vie, on est dans son cœur<br/>
+							L'amour d'une maman est un grand trésor<br/> 
+							Certains se rendent compte après sa mort!<br/> 
+							Moi je ne sais pas toujours te le dire<br/> 
+							Voilà pourquoi j'ai voulu te l'écrire<br/> 
+							je t'aime beaucoup maman<br/> 
+							Et je voulais que tu le saches à présent<br/> 
+							Freesia							
+						</p>
+						<p class="lead mb-0"><a href="mise_en_page.html" class="font-weight-bold">En savoir plus...</a></p>
+					</div>
+					<div class="row">
+						<div class="col-lg-5"> 
+							<div class="jumbotron bg-violet-light rounded shadow">
+								<h2 class="font-italic">MULTIMEDIA</h2>
+									<!-- Debut de la partie création de la miniature d'une image -->
+									<h3 id="aud">Mettre un fichier audio</h3>
+									 <!-- Explication de commment faire une miniature et de l'utilité des différent élement utilisé -->
+									<hr>
+									<p>
+										Afin d'ajouter un fichier audio à la page il faut mettre une balise "AUDIO"<br/>
+									    Avec l'attribut controls vous pourrez afficher le player de votre fichier comme ci-dessous<br/>
+									    afin de gérer plusieurs type de fichier (.mp3, .ogg, .wav) on rajoute une balise "SOURCE" dans "AUDIO"
+									</p>
+									<p class="lead mb-0"><a href="multimedia.html" class="font-weight-bold">En savoir plus...</a></p>
+							</div>
+						</div>
+						<div class="col-lg-5"> 
+							<div class="jumbotron bg-violet-light rounded shadow">
+								<h2>Gestion d'images</h2>
+								<h3 id="minia">Faire une miniature</h3>
+								 <!-- Explication de commment faire une miniature et de l'utilité des différent élement utilisé -->
+								 <hr>
+								<p>
+									Afin que lorsqu'on clique sur la miniature l'image original s'affiche, il faut créer une balise "a"<br/>
+								    Avec l'attribut href qui permet de mettre dans ça valeur un chemin vers une cible (image, site, ...)<br/></p>
+									<p class="lead mb-0"><a href="unite_contenu.html" class="font-weight-bold">En savoir plus...</a></p>
+							</div>
+						</div>					
+					</div>
+					<div class="jumbotron bg-violet-light rounded shadow">
+						<h3 class="display-4 font-italic">Les tableaux</h3>
+						<h4 id="para">Voici un exemple de tableau</h4>
+						<hr>
+						<a href="tableaux.html" target="_Blank">
+							<img src="../IMAGE/table.png" height="250" width="650">
+						</a>
+						<p class="lead mb-0"><a href="tableaux.html" target="_Blank" class="font-weight-bold">En savoir plus...</a></p>
+					</div>
+				</div>									
+				<!-- Sidebar Menu -->
+				<div class="col-sm-4" >
+
+		          	<!-- Search Widget -->
+		          	<div class="card my-4 shadow">
+		            	<h5 class="card-header">Rechercher</h5>
+		            	<div class="card-body">
+		              		<div class="input-group">
+		                		<input type="text" class="form-control" placeholder="Rechercher...">
+		                		<span class="input-group-btn">
+		                  			<button class="btn btn-secondary" type="button">Go!</button>
+		                		</span>
+		              		</div>
+		            	</div>
+		         	 </div>
+
+		          <!-- "Différent type de liste" Widget -->
+		          	<div class="card my-4 shadow">
+		            	<h5 class="card-header">Les différentes mise en page</h5>
+		            	<div class="card-body">
+		             		<div class="row">
+		                		<div class="col-lg-9">
+		                  			<ul class="list-unstyled mb-0 toc-entry">
+		                    			<li><a href="#para">Les paragraphes et mises à la lignes</a></li>
+		                    			<li><a href="#CSS">Mise en page avec du CSS</a></li>
+		                    			<li><a href="#BR">Si la balise BR n'est pas utilisée</a></li>
+		                  			</ul>
+		                		</div>
+		              		</div>
+		            	</div>
+		          	</div>
+
+		          	<!-- Info -->
+		          	<div class="card my-4 shadow">
+		            	<h5 class="card-header">Information</h5>
+		            	<div class="card-body">
+		              		Tout se qui est de l'ordre de la mise en page se fera via un CSS.
+		            	</div>
+		          	</div>
+		        </div>
+			</div>
+		</div>
+		<!-- return top -->
+		<div class="container fixed-bottom mb-5"> <!-- Fixed-bottom permet de fixer quelque chose au bas de l'écran -->
+        	<p class="float-right ">
+          		<a href="#">Retourner en haut de la page</a>
+        	</p>
+        </div>
+        <footer class="text-center text-white">
+        	<div class="container-fluid bg-violet">
+        		Ce site n'est pas une version finale, certain bug peuvent donc être trouvés ou encore des fautes.<br>
+        		   Ce site a été réalisé à l'aide de <a target="_Blank" href="https://getbootstrap.com/">boostrap</a> 
+        	</div>
+        </footer>		
+	</body>
+</html>

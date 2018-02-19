@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+
+		<!-- TITLE -->
+		<title>Les balises</title>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/logo.png" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\bootstrap.min.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="text-center bg-header">
+				<a href="menu.html">
+					<img src="..\IMAGE\icon.png" alt="icône_de_la_page" height="120">
+				</a>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	      	<div class="collapse navbar-collapse justify-content-md-center">
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item ">
+	            		<a class="nav-link" href="menu.html">Acceuil</a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="mise_en_page.html">Mise en forme</a>
+	          		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="listes.html">Les listes</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="multimedia.html">Multimédia</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="unite_contenu.html">Gestion d'images</a>
+              		</li>              		
+	          		<li class="nav-item active" >
+            			<a class="nav-link" href="balises.html">Les balises<span class="sr-only">(current)</span></a>
+              		</li>               		              		
+	        	</ul>
+	      	</div>
+	    </nav>
+		<!-- Contient tout le contenu de la page -->
+		<div class="container mt-2">
+			<div class="row">
+				<div class="col-lg-8"> 
+			<h1>Les balises</h1>  <!-- Titre de la page -->
+			<h2 id="form">les balises de formulaires</h2> <!-- Debut partie sur les formulaires -->
+			<p>Un formulaire permet au client de renseigner des données et de les envoyer au serveur pour traitement.</p> <!-- Explication de l'utilité d'un formulaire -->
+			<!-- Debut du formulaire -->
+
+					<!-- Création du formulaire -->			
+					<form method="post" action="#" name="form">
+						<!-- Partie "Données personnels" -->
+						<fieldset>
+							<!-- Nom de la partie -->
+							<legend>Données personnels</legend>
+							<p>
+								<!-- Debut partie boutons radios (la civilité) -->
+								<input type="radio" name="civilité" size="50" value="1" checked="">M. <!-- Valeurs cocher de base ("checked") -->
+								<input type="radio" name="civilité" size="50" value="2">Mme.
+								<input type="radio" name="civilité" size="50" value="3">autre<br/>
+								<!-- Fin partie boutons radios -->
+								<!-- Boite texte nom (Partie séléctionné par défaut quand on arrive sur la page avec le formulaire "autofocus") -->
+								<input type="text" name="text" size="50" placeholder="Entrez votre nom..." autofocus=""><br/>
+								<!-- Boite texte prénom -->
+								<input type="text" name="text2" size="50" placeholder="Entrez votre prénom..."><br/>
+								<!-- Boite texte mot de passe (requis) -->
+								<input type="password" name="mdp" size="50" placeholder="Entrez votre mot de passe..." required=""><br/>
+								<!-- Boite texte e-mail (requis) -->
+								<input type="email" name="email" size="50" placeholder="Entrez votre adresse email..." required=""><br/><br/>				
+						</fieldset>
+						<!-- Partie "Informations supplémentaires" -->
+						<fieldset>
+							<!-- Nom de la partie -->
+							<legend>Informations supplémentaires</legend>
+							<!-- Debut partie checkbox ( les différentes matières ) -->
+							</br>Les matières :<br/>
+							<input type="checkbox" name="gamedesign" size="50" >Game design<br/>
+							<input type="checkbox" name="web" size="50" checked="" >Web<br/>
+							<input type="checkbox" name="Anglais" size="50">Anglais<br/>
+							<input type="checkbox" name="algorithme" size="50" >Algorithme<br/></br>
+							<!-- Fin partie checkbox -->
+							Votre description :<br/>
+							<!-- Zone de texte pour donner un desciption de sois -->
+							<textarea rows="5" cols="50" placeholder="Text..."></textarea><br/></br>
+							Votre date de naissance :<br/>
+							<!-- Calendrier pour donner ça date de naissance -->
+							<input type="date" name="date"><br/><br/>
+							<!-- Debut de la selection de la situation economique -->
+							Votre situation économique :<br/>
+							<select size="" >
+								<option value="Cp0" selected="">
+									Séléctionnez votre situation
+								</option>
+								<option value="Cp1">
+									Etudiant
+								</option>
+								<option Value="Cp2">
+									Salarié
+								</option Value="Cp3">
+								<option>
+									Cadre
+								</option>
+							</select><br/><br/>
+							<!-- Fin de la selection -->
+							Votre tranche d'age :</br>
+							<input list="age"> <!-- Initialisation de la datalist -->s
+							<datalist id="age">
+								<option value="bébé"></option>
+								<option value="enfant"></option>
+								<option value="adolescent"></option>
+								<option value="adulte"></option>
+								<option value="papi ou mami"></option>
+							</datalist><br/><br/>
+						    Votre site :</br>
+							<input type="url" name="url" size="50" placeholder="Insérer un URL..."><br/></br>
+							<input type="submit" name="valider" size="50" value="Valider">
+							<input type="reset" name="_rst" size="50" value="Reinitialiser"></br>
+							<input type="image" src="..\IMAGE\button.png" height="32" name="">
+							<progress value="" max=""> </progress>							
+							</p>
+						</fieldset>
+
+						
+					</form>
+					<p>La balise "FORM" a comme attribut obligatoire la method (à post ou get) l'action qui est la cible (la page html à laquelle on envoie les données du formulaire).</p>
+					<ul>
+						<li id="formAtt"><strong>Les attributs du de la balise FORM</strong>
+							<ul>
+								<li><strong>Method</strong>
+									<ul>
+										<li>get</li>
+										<li>post</li>
+									</ul>
+								</li>
+								<li>action</li>
+								<li>Name</li>
+							</ul>
+						</li>
+						<li><strong id="inputAtt">Les attributs de la balise INPUT</strong>
+							<ul>
+								<li><strong>Type</strong>
+									<ul>
+										<li><strong>Text</strong></br>
+											Permet à l'utilisateur d'entrer du texte(crée une zone de texte).										
+										</li>
+										<li><strong>Password</strong></br>
+											Permet à l'utilisateur d'entrer du texte caché par des étoiles.
+										</li>
+										<li><strong>Required</strong></br>
+											Affiche, quand l'utilisateur appuie sur validé, si le champ qui à l'attribut "Required" est rempli ou pas.
+										</li>
+										<li><strong>Radio</strong></br>
+											Permet à l'utilisateur de faire un choix entre plusieurs option graçe à des boutons Radio.
+										</li>
+										<li><strong>Checkbox</strong></br>
+											Permet à l'utilisateur de cocher plusieurs option graçe à des checkbox.
+										</li>
+										<li><strong>email</strong></br>
+											Permet à l'utilisateur d'entrer une adresse e-mail et le formulaire vérifie directement s'il s'agit bien d'un e-mail.
+										</li>
+										<li><strong>date</strong></br>
+											Permet à l'utilisateur de sélectionner une date.
+										</li>
+										<li><strong>url</strong></br>
+											Permet à l'utilisateur d'entrer un URL et le formaile vérifaire directement s'il s'agit bien d'une URL.
+										</li>
+										<li><strong>submit</strong></br>
+											Crée une bouton valider et récupère toute les infos du formulaire.
+										</li>
+										<li><strong>Reset</strong></br>
+											Crée une bouton réinitialise et supprime toute les infos du formulaire.
+										</li>
+										<li><strong>Progress</strong></br>
+											Crée barre de progression.
+										</li>
+										<li><strong>image</strong></br>
+											Crée une bouton valider sous forme d'image.
+										</li>									
+									</ul>
+								</li>
+								<li><strong>Name</strong></br>
+									Donne une nom au input crée se qui servira plus tard pour récupérer un certaine valeur.
+								</li>
+								<li><strong>Size</strong></br>
+									Change la taille de l'input crée
+								</li>
+								<li><strong>Value</strong></br>
+									Le value pour un input de type "text" permet d'y assigner un certain texte sinon il permet d'identifier une certaine valeur.
+								</li>
+								<li><strong>Autofocus</strong></br>
+									Permet de séléctionner automatiquement un certain input.
+								</li>
+								<li><strong>placeholder</strong></br>
+									Permet d'assigner un texte en arrière plan de l'input (d'une zone de texte).
+								</li>
+								<li><strong>Checked</strong></br>
+									Le checked est utile pour les bouton radio et checkbox, il permet de selectionner une valeur par défaut.
+								</li>
+								<li><strong>rows</strong></br>
+									Permet de modifier la hauteur d'une zone de texte.
+								</li>
+								<li><strong>Cols</strong></br>
+									Permet de modifier la largeur d'une zone de texte.
+								</li>
+							</ul>						
+						</li>
+						<li id="selectEl"><strong>Les élément de la balise SELECT</strong>
+							<ul>
+								<li><strong>La balise OPTION</strong></br>
+									Permet de rajouter des selections dans le SELECT, en ajoutant l'attrubut "selected" dans la balise ouvrante d'une des</br>
+									options, elle sera sélectionné par defaut.
+								</li>
+							</ul>
+						</li>
+						<li id="dataEl"><strong>Les élément de la balise DATALIST</strong>
+							<ul>
+								<li><strong>Input list="nom_datalist"</strong></br>
+									Avant de crée une datalist il faut toujours mettre une balise input avec un attribut list="nom_datalist" cela permet de</br>
+									créer la datalist.
+								</li>
+							</ul>
+							<ul>
+								<li><strong>ID</strong></br>
+									L'attribut ID permet de récupéré input list="nom_datalist" afin de savoir graçe à qu'elle input la datalist est crée.
+								</li>
+							</ul>
+							<ul>
+								<li><strong>La balise OPTION</strong></br>
+									Permet de rajouter des options à la datalist et afin de chacune les nommers il faut utiliser l'attribut value="nom_option"
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- Sidebar Menu -->
+				<div class="col-md-4" >
+
+		          	<!-- Search Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Rechercher</h5>
+		            	<div class="card-body">
+		              		<div class="input-group">
+		                		<input type="text" class="form-control" placeholder="Rechercher...">
+		                		<span class="input-group-btn">
+		                  			<button class="btn btn-secondary" type="button">Go!</button>
+		                		</span>
+		              		</div>
+		            	</div>
+		         	 </div>
+
+		          <!-- "Différent type de liste" Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Les différent type de listes</h5>
+		            	<div class="card-body">
+		             		<div class="row">
+		                		<div class="col-lg-9">
+		                  			<ul class="list-unstyled mb-0 toc-entry">
+		                    			<li><a href="#form">Les balises de formulaires</a></li>
+		                    			<li><a href="#formAtt">Les attributs de la balise FORM</a></li>
+		                    			<li><a href="#inputAtt">Les attributs de la balise INPUT</a></li>
+		                    			<li><a href="#selectEl">Les élément de la balise SELECT</a></li>		                    
+		                    			<li><a href="#dataEl">Les élément de la balise DATALIST</a></li>     						
+		                  			</ul>
+		                		</div>
+		              		</div>
+		            	</div>
+		          	</div>
+
+		          	<!-- Info -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Information</h5>
+		            	<div class="card-body">
+		              		Pour toutes les listes de type ordonné ou non ordonné il est possible d'imbriquer les lignes (exemple : UL > LI > UL > LI)
+		            	</div>
+		          	</div>
+		        </div>
+			</div>
+		</div>
+		<!-- return top -->
+		<div class="container fixed-bottom mb-5"> <!-- Fixed-bottom permet de fixer quelque chose au bas de l'écran -->
+        	<p class="float-right ">
+          		<a href="#">Retourner en haut de la page</a>
+        	</p>
+        </div>
+        <footer class="text-center text-white">
+        	<div class="container-fluid bg-violet">
+        		Ce site n'est pas une version finale, certain bug peuvent donc être trouvés ou encore des fautes.<br>
+        		   Ce site a été réalisé à l'aide de <a target="_Blank" href="https://getbootstrap.com/">boostrap</a> 
+        	</div>
+        </footer>
+    </body>

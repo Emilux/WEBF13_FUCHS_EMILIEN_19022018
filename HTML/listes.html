@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+
+		<!-- TITLE -->
+		<title>Les listes</title>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/logo.png" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\bootstrap.min.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="text-center bg-header">
+				<a href="menu.html">
+					<img src="..\IMAGE\icon.png" alt="icône_de_la_page" height="120">
+				</a>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	      	<div class="collapse navbar-collapse justify-content-md-center">
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item ">
+	            		<a class="nav-link" href="menu.html">Acceuil</a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="mise_en_page.html">Mise en forme</a>
+	          		</li>
+	          		<li class="nav-item active" >
+            			<a class="nav-link" href="listes.html">Les listes<span class="sr-only">(current)</span></a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="multimedia.html">Multimédia</a>
+              		</li> 
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="unite_contenu.html">Gestion d'images</a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="balises.html">Les balises</a>
+              		</li>                		              		             		
+	        	</ul>
+	      	</div>
+	    </nav>
+	    <!-- Page content -->
+		<div class="container mt-2" >
+			<div class="row">
+				<!-- Post content -->
+				<div class="col-lg-8">
+					<!-- Title -->					
+					<h2 id="listes"> LES LISTES</h2>
+					<!-- Sub-title -->				
+					<h3 id="nord">Listes non ordonnées</h3>
+					<!-- Introduction -->
+					<p>Pour faire une liste non ordonné on utilise la balise UL pour la commencer et chaque élément de la liste
+					   sera mit derrière une balise ouvrante LI. Par defaut chaque élément de la liste est marqué d'un cercle plein.</p>
+					<hr>
+					<!-- /!\ les valeurs bg-violet shadow, border-rad, text-black sont modifiablent dans le style.css /!\ -->
+					<div class="container bg-violet text-white shadow border-rad">
+						<div class="p-2">
+						<h4>Exemple :</h4>
+						<div class="container bg-violet-light text-black border-rad">
+								<ul>			
+									<li>Basket
+										<ul>
+											<li>Balle de basket</li>
+											<li>Maillot de basket</li>
+											<li>Chaussure de sport</li>
+										</ul>
+									</li>
+
+									<li>Football
+										<ul>
+											<li>Balle de foot</li>
+											<li>Maillot de foot</li>
+											<li>Chaussure à crampon</li>
+										</ul>
+									</li>
+
+									<li>Handball
+										<ul>
+											<li>Balle de handball</li>
+											<li>Maillot de handball</li>
+											<li>Chaussure de sport</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>		
+					</div>
+
+					<hr>
+					<!-- Remarque -->
+					<p>Remarque : Il est possible de modifier l'apparence du point de la liste UL  graçe à du CSS
+					   en ecrivant directement dans la balise (style="list-style-type:le_type_de_forme"), les formes sont
+					   les suivantes :</p>
+					<!--utilisation d'un tableau pour renseigner toute les valeurs possible et leur description -->
+					<table class="table">
+						<tr>
+						<th>Valeur</th>
+						<th>Description</th>
+						</tr>
+						<tr>
+							<td>SQUARE</td>
+							<td>Affiche une forme de carré à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>CIRCLE</td>
+							<td>Affiche une forme de cercle vide à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>DISC</td>
+							<td>Affiche une forme de cercle plein à chaque lignes (par défaut)</td>
+						</tr>
+						<tr>
+							<td>NONE</td>
+							<td>N'ffiche aucune forme à chaque lignes</td>
+						</tr>																		
+					</table>
+					<p>Le style CSS peut aussi être rajouté via un fichier CSS externe.</p>
+					
+					<!-- Sub-title -->		
+					<h3 id="ord">Listes ordonnées</h3>
+					<!-- Introduction -->
+					<p>Pour faire une liste non ordonné on utilise la balise OL pour la commencer et chaque élément de la liste
+					   sera mit derrière une balise ouvrante LI. Par defaut chaque élément de la liste est marqué d'un nombre.</p>					
+					<hr>
+					<div class="container bg-violet text-white shadow border-rad"> 
+						<div class="p-2">
+						<h4 id="OL">Exemple :</h4>						
+							<div class="container bg-violet-light text-black border-rad">
+								<ol>			
+									<li>Basket</li>
+									<li>Football</li>
+									<li>Handball</li>
+								</ol>
+							</div>
+						</div>		
+					</div>
+					<hr>
+					<!-- Remarque -->
+					<p>Remarque : Il est possible de modifier l'apparence des nombres de la liste OL  graçe à l'attribut type placé dans la balise OL
+					   Les différents types de marqueurs sont les suivants :</p>
+					   <!--utilisation d'un tableau pour renseigner tout les types possible et leur description -->
+					<table class="table">
+						<tr>
+						<th>TYPE</th>
+						<th>Description</th>
+						</tr>
+						<tr>
+							<td>Type="1"</td>
+							<td>Par defaut. Affiche des nombres à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>Type="A"</td>
+							<td>Affiche des lettres majusucles à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>Type="a"</td>
+							<td>Affiche des lettres minuscules à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>Type="I"</td>
+							<td>Affiche des chiffres Romain en majuscule à chaque lignes</td>
+						</tr>
+						<tr>
+							<td>Type="i"</td>
+							<td>Affiche des chiffres Romain en majusucles à chaque lignes</td>
+						</tr>																			
+					</table>				
+					<!-- Sub-title -->	
+					<h3 id="def"> Listes de définitions</h3>
+					<!-- Introduction -->
+					<p>La listes de définitions est une liste de termes qui possèdent chacun leur définition. La liste de définitions se commence avec
+					   une balise DL ensuite est suivi par la baliste DT qui permet d'entrer le terme et enfin la balise DD qui permet d'ecrire
+					   la description du terme.</p>
+					<hr>	
+					<div class="container bg-violet text-white shadow border-rad">
+						<div class="p-2">
+						<h4 id="OL">Exemple :</h4>						
+							<div class="container bg-violet-light text-black border-rad">							
+								<dl>			
+									<dt>Football
+										<dd>Courir derrière une balle</dd>
+										<dd>Sur un terrain en herbe en pleine</dd>
+										<dd>il faut mettre la balle dans le but adverse</dd>
+									</dt>
+
+									<dt>Handball
+										<dd>Courir avec une balle en main</dd>
+										<dd>Dans une salle</dd>
+										<dd>il faut mettre la balle dans le but adverse</dd>
+									</dt>
+
+									<dt>Basket
+										<dd>Dribler avec une balle en main</dd>
+										<dd>Dans une salle</dd>
+										<dd>il faut mettre la balle dans le panier adverse</dd>
+									</dt>
+								</dl>
+							</div>							
+						</div>		
+					</div>
+					<hr>
+				</div>
+
+				<!-- Sidebar Menu -->
+				<div class="col-sm-4" >
+
+		          	<!-- Search Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Rechercher</h5>
+		            	<div class="card-body">
+		              		<div class="input-group">
+		                		<input type="text" class="form-control" placeholder="Rechercher...">
+		                		<span class="input-group-btn">
+		                  			<button class="btn btn-secondary" type="button">Go!</button>
+		                		</span>
+		              		</div>
+		            	</div>
+		         	 </div>
+
+		          <!-- "Différent type de liste" Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Les différents type de listes</h5>
+		            	<div class="card-body">
+		             		<div class="row">
+		                		<div class="col-lg-9">
+		                  			<ul class="list-unstyled mb-0 toc-entry">
+		                    			<li><a href="#nord">Listes non ordonnées</a></li>
+		                    			<li><a href="#ord">Listes ordonnées</a></li>
+		                    			<li><a href="#def">Listes de définitions</a></li>
+		                  			</ul>
+		                		</div>
+		              		</div>
+		            	</div>
+		          	</div>
+
+		          	<!-- Info -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Information</h5>
+		            	<div class="card-body">
+		              		Pour toutes les listes de type ordonné ou non ordonné il est possible d'imbriquer les lignes (exemple : UL > LI > UL > LI)
+		            	</div>
+		          	</div>
+		        </div>
+			</div>
+		</div>
+		<!-- return top -->
+		<div class="container fixed-bottom mb-5"> <!-- Fixed-bottom permet de fixer quelque chose au bas de l'écran -->
+        	<p class="float-right ">
+          		<a href="#">Retourner en haut de la page</a>
+        	</p>
+        </div>
+        <footer class="text-center text-white">
+        	<div class="container-fluid bg-violet">
+        		Ce site n'est pas une version finale, certain bug peuvent donc être trouvés ou encore des fautes.<br>
+        		   Ce site a été réalisé à l'aide de <a target="_Blank" href="https://getbootstrap.com/">boostrap</a> 
+        	</div>
+        </footer>	
+	</body>
+</html>

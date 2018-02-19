@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+
+		<!-- TITLE -->
+		<title>Gestion d'images</title>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/logo.png" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\bootstrap.min.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="..\CSS\style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="text-center bg-header">
+				<a href="menu.html">
+					<img src="..\IMAGE\icon.png" alt="icône_de_la_page" height="120">
+				</a>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	      	<div class="collapse navbar-collapse justify-content-md-center">
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item ">
+	            		<a class="nav-link" href="menu.html">Acceuil</a>
+	          		</li>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="mise_en_page.html">Mise en forme</a>
+	          		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="listes.html">Les listes</a>
+              		</li>
+ 	          		<li class="nav-item" >
+            			<a class="nav-link" href="multimedia.html">Multimédia</a>
+              		</li>
+	          		<li class="nav-item active" >
+            			<a class="nav-link" href="unite_contenu.html">Gestion d'images<span class="sr-only">(current)</span></a>
+              		</li>
+	          		<li class="nav-item" >
+            			<a class="nav-link" href="balises.html">Les balises</a>
+              		</li>               		
+	        	</ul>
+	      	</div>
+	    </nav>
+
+		<div class="container mt-2" >
+			<div class="row">
+				<!-- Post content -->
+				<div class="col-lg-8">				
+					<!-- Debut de la partie création de la miniature d'une image -->
+					<h2 id="minia">Faire une miniature</h2>
+					 <!-- Explication de commment faire une miniature et de l'utilité des différent élement utilisé -->
+					 <hr>
+					<p>
+						Afin que lorsqu'on clique sur la miniature l'image original s'affiche, il faut créer une balise "a"<br/>
+					    Avec l'attribut href qui permet de mettre dans ça valeur un chemin vers une cible (image, site, ...)<br/>
+					    Lorsqu'on cliquera sur cette image elle ouvrira dans une autre fenêtre graçe à l'attribut "target"<br/>
+					    et ça valeur "_blank" qui permet d'ouvrir le contenu dans un nouvel onglet. 
+					</p>
+					<hr>
+					 <!-- Mise en place de la miniature -->
+					<p>
+						 <!-- Liens permettant de visualiser dans un nouvel onglet l'image original  -->
+						<a target="_blank" href="..\IMAGE\1_vie_de_vers.png">
+							 <!-- affiche l'image en version miniature -->
+							<img src="..\IMAGE\1_vie_de_vers_mini.png" alt="Miniature">
+						</a>
+					</p>
+					 <!-- Fin de la partie création de la miniature d'une image -->	
+					<h2 id="fig">Les figures</h2>
+					<hr>
+					<p>
+						"figure" est une unité de contenu, c'est-à-dire que cet élément sert de conteneur dans lequel s'insèrent divers<br/>
+						éléments comme des images, des schémas, des vidéos, des tableaux ou encore des blocs de code.<br/>
+					</p>
+					<hr>
+					<figure>
+							<a target="_blank" href="..\IMAGE\screen.jpg">
+								<img src="..\IMAGE\screen.jpg" alt="screen_Bloc_note" height="100">		
+							</a>
+							<figcaption>Graçe à la balise paire "figcaption" on peut rajouter un libellé au image dans la balise "figure" comme se que vous lisez.</figcaption>			
+					</figure>
+					<hr>
+					<p>
+						Son rôle est de légender les éléments présents dans "figure", sous forme de texte et/ou de liens.<br/>
+						Il peut se placer avant ou après le	contenu principal de "figure". Dans notre cas il a été placé après<br/>
+						la balise img et donc s'affiche en dessous.
+					</p>
+					<hr>
+					<figure>
+							<a target="_blank" href="..\IMAGE\screen.jpg">
+								<img src="..\IMAGE\screen.jpg" alt="screen_Bloc_note" height="100">		
+							</a>
+							<a target="_blank" href="..\IMAGE\screen2.jpg">
+								<img src="..\IMAGE\screen2.jpg" alt="screen_Sublime_Text" height="100">		
+							</a>
+							<a target="_blank" href="..\IMAGE\screen3.jpg">
+								<img src="..\IMAGE\screen3.jpg" alt="screen_Wordpad" height="100">		
+							</a>
+							<a target="_blank" href="..\IMAGE\screen4.jpg">
+								<img src="..\IMAGE\screen4.jpg" alt="screen_Word" height="100">		
+							</a>
+							<a target="_blank" href="..\IMAGE\screen5.jpg">
+								<img src="..\IMAGE\screen5.jpg" alt="screen_Notepad" height="100">		
+							</a>
+							<figcaption>La balise figure avec des miniature qui affiche l'original quand on clique dessus</figcaption>			
+					</figure>
+				</div>
+				<!-- Sidebar Menu -->
+				<div class="col-md-4" >
+
+		          	<!-- Search Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Rechercher</h5>
+		            	<div class="card-body">
+		              		<div class="input-group">
+		                		<input type="text" class="form-control" placeholder="Rechercher...">
+		                		<span class="input-group-btn">
+		                  			<button class="btn btn-secondary" type="button">Go!</button>
+		                		</span>
+		              		</div>
+		            	</div>
+		         	 </div>
+
+		          <!-- "Différent type de liste" Widget -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Les différent type de listes</h5>
+		            	<div class="card-body">
+		             		<div class="row">
+		                		<div class="col-lg-9">
+		                  			<ul class="list-unstyled mb-0 toc-entry">
+		                    			<li><a href="#minia">Faire une miniature</a></li>
+		                    			<li><a href="#fig">Les figures</a></li>
+		                  			</ul>
+		                		</div>
+		              		</div>
+		            	</div>
+		          	</div>
+
+		          	<!-- Info -->
+		          	<div class="card my-4">
+		            	<h5 class="card-header">Information</h5>
+		            	<div class="card-body">
+		              		La balise FIGURE est utilisé afin d'illustrer et de légender des photos, des diagrammes, ou encore des schémas.
+		            	</div>
+		          	</div>
+		        </div>
+			</div>
+		</div>
+		<!-- return top -->
+		<div class="container fixed-bottom mb-5"> <!-- Fixed-bottom permet de fixer quelque chose au bas de l'écran -->
+        	<p class="float-right ">
+          		<a href="#">Retourner en haut de la page</a>
+        	</p>
+        </div>
+        <footer class="text-center text-white">
+        	<div class="container-fluid bg-violet">
+        		Ce site n'est pas une version finale, certain bug peuvent donc être trouvés ou encore des fautes.<br>
+        		   Ce site a été réalisé à l'aide de <a target="_Blank" href="https://getbootstrap.com/">boostrap</a> 
+        	</div>
+        </footer>					
+</body>
+</html> 
